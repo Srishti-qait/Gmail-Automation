@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" total="2" passed="1">
+  <reporter-output>
+    <line>
+      <![CDATA[
+The application url is :- http://www.gmail.com]]>
+    </line>
+    <line>
+      <![CDATA[The test browser is :- chrome
+]]>
+    </line>
+    <line>
+      <![CDATA[TEST PASSED: element txt_id is displayed.]]>
+    </line>
+    <line>
+      <![CDATA[TEST PASSED: element btn_id is displayed.]]>
+    </line>
+    <line>
+      <![CDATA[TEST PASSED: element txt_password is displayed.]]>
+    </line>
+    <line>
+      <![CDATA[TEST PASSED: element btn_password is displayed.]]>
+    </line>
+    <line>
+      <![CDATA[TEST PASSED: PageTitle for Inbox (2,622) - srishti.13it066@abes.ac.in - ABES Engineering College Mail contains: ' '.]]>
+    </line>
+    <line>
+      <![CDATA[TEST PASSED: element txt_searchbox is displayed.]]>
+    </line>
+    <line>
+      <![CDATA[TEST PASSED: element btn_searchbox is displayed.]]>
+    </line>
+    <line>
+      <![CDATA[TEST PASSED: element no_of_msg  is displayed.]]>
+    </line>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="50179" started-at="2017-07-25T09:25:53Z" finished-at="2017-07-25T09:26:44Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="50179" started-at="2017-07-25T09:25:53Z" finished-at="2017-07-25T09:26:44Z">
+      <class name="com.qait.demo.tests.LoginTest">
+        <test-method status="PASS" signature="initializeVariable()[pri:0, instance:com.qait.demo.tests.LoginTest@3c0ecd4b]" name="initializeVariable" is-config="true" duration-ms="3879" started-at="2017-07-25T14:55:53Z" finished-at="2017-07-25T14:55:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializeVariable -->
+        <test-method status="PASS" signature="test01_verifyUseLoginOn()[pri:0, instance:com.qait.demo.tests.LoginTest@3c0ecd4b]" name="test01_verifyUseLoginOn" duration-ms="10946" started-at="2017-07-25T14:55:57Z" finished-at="2017-07-25T14:56:08Z">
+          <reporter-output>
+            <line>
+              <![CDATA[
+The application url is :- http://www.gmail.com]]>
+            </line>
+            <line>
+              <![CDATA[The test browser is :- chrome
+]]>
+            </line>
+            <line>
+              <![CDATA[TEST PASSED: element txt_id is displayed.]]>
+            </line>
+            <line>
+              <![CDATA[TEST PASSED: element btn_id is displayed.]]>
+            </line>
+            <line>
+              <![CDATA[TEST PASSED: element txt_password is displayed.]]>
+            </line>
+            <line>
+              <![CDATA[TEST PASSED: element btn_password is displayed.]]>
+            </line>
+            <line>
+              <![CDATA[TEST PASSED: PageTitle for Inbox (2,622) - srishti.13it066@abes.ac.in - ABES Engineering College Mail contains: ' '.]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- test01_verifyUseLoginOn -->
+        <test-method status="FAIL" signature="test02_verifycopymail()[pri:0, instance:com.qait.demo.tests.LoginTest@3c0ecd4b]" name="test02_verifycopymail" duration-ms="35333" started-at="2017-07-25T14:56:08Z" finished-at="2017-07-25T14:56:44Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[FAILED: Element btn_Test not found on the InboxPage !!!]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: FAILED: Element btn_Test not found on the InboxPage !!!
+	at org.testng.Assert.fail(Assert.java:94)
+	at com.qait.automation.getpageobjects.GetPage.element(GetPage.java:84)
+	at com.qait.automation.getpageobjects.GetPage.element(GetPage.java:62)
+	at com.qait.demo.keywords.HomePageAction.move(HomePageAction.java:41)
+	at com.qait.demo.tests.LoginTest.test02_verifycopymail(LoginTest.java:33)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+            <line>
+              <![CDATA[TEST PASSED: element txt_searchbox is displayed.]]>
+            </line>
+            <line>
+              <![CDATA[TEST PASSED: element btn_searchbox is displayed.]]>
+            </line>
+            <line>
+              <![CDATA[TEST PASSED: element no_of_msg  is displayed.]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- test02_verifycopymail -->
+      </class> <!-- com.qait.demo.tests.LoginTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
