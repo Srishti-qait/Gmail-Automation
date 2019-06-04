@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" total="2" passed="1">
+<testng-results skipped="0" failed="2" total="2" passed="0">
   <reporter-output>
     <line>
       <![CDATA[
@@ -15,73 +15,41 @@ The application url is :- http://www.gmail.com]]>
     <line>
       <![CDATA[TEST PASSED: element btn_id is displayed.]]>
     </line>
-    <line>
-      <![CDATA[TEST PASSED: element txt_password is displayed.]]>
-    </line>
-    <line>
-      <![CDATA[TEST PASSED: element btn_password is displayed.]]>
-    </line>
-    <line>
-      <![CDATA[TEST PASSED: PageTitle for Inbox (2,622) - srishti.13it066@abes.ac.in - ABES Engineering College Mail contains: ' '.]]>
-    </line>
-    <line>
-      <![CDATA[TEST PASSED: element txt_searchbox is displayed.]]>
-    </line>
-    <line>
-      <![CDATA[TEST PASSED: element btn_searchbox is displayed.]]>
-    </line>
-    <line>
-      <![CDATA[TEST PASSED: element no_of_msg  is displayed.]]>
-    </line>
   </reporter-output>
-  <suite name="Default suite" duration-ms="50179" started-at="2017-07-25T09:25:53Z" finished-at="2017-07-25T09:26:44Z">
+  <suite name="Default suite" duration-ms="73639" started-at="2019-06-04T07:59:12Z" finished-at="2019-06-04T08:00:25Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="50179" started-at="2017-07-25T09:25:53Z" finished-at="2017-07-25T09:26:44Z">
+    <test name="Default test" duration-ms="73639" started-at="2019-06-04T07:59:12Z" finished-at="2019-06-04T08:00:25Z">
       <class name="com.qait.demo.tests.LoginTest">
-        <test-method status="PASS" signature="initializeVariable()[pri:0, instance:com.qait.demo.tests.LoginTest@3c0ecd4b]" name="initializeVariable" is-config="true" duration-ms="3879" started-at="2017-07-25T14:55:53Z" finished-at="2017-07-25T14:55:57Z">
+        <test-method status="PASS" signature="initializeVariable()[pri:0, instance:com.qait.demo.tests.LoginTest@3abbfa04]" name="initializeVariable" is-config="true" duration-ms="8794" started-at="2019-06-04T13:29:12Z" finished-at="2019-06-04T13:29:21Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initializeVariable -->
-        <test-method status="PASS" signature="test01_verifyUseLoginOn()[pri:0, instance:com.qait.demo.tests.LoginTest@3c0ecd4b]" name="test01_verifyUseLoginOn" duration-ms="10946" started-at="2017-07-25T14:55:57Z" finished-at="2017-07-25T14:56:08Z">
-          <reporter-output>
-            <line>
-              <![CDATA[
-The application url is :- http://www.gmail.com]]>
-            </line>
-            <line>
-              <![CDATA[The test browser is :- chrome
-]]>
-            </line>
-            <line>
-              <![CDATA[TEST PASSED: element txt_id is displayed.]]>
-            </line>
-            <line>
-              <![CDATA[TEST PASSED: element btn_id is displayed.]]>
-            </line>
-            <line>
-              <![CDATA[TEST PASSED: element txt_password is displayed.]]>
-            </line>
-            <line>
-              <![CDATA[TEST PASSED: element btn_password is displayed.]]>
-            </line>
-            <line>
-              <![CDATA[TEST PASSED: PageTitle for Inbox (2,622) - srishti.13it066@abes.ac.in - ABES Engineering College Mail contains: ' '.]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- test01_verifyUseLoginOn -->
-        <test-method status="FAIL" signature="test02_verifycopymail()[pri:0, instance:com.qait.demo.tests.LoginTest@3c0ecd4b]" name="test02_verifycopymail" duration-ms="35333" started-at="2017-07-25T14:56:08Z" finished-at="2017-07-25T14:56:44Z">
-          <exception class="java.lang.AssertionError">
+        <test-method status="FAIL" signature="test01_verifyUseLoginOn()[pri:0, instance:com.qait.demo.tests.LoginTest@3abbfa04]" name="test01_verifyUseLoginOn" duration-ms="34717" started-at="2019-06-04T13:29:21Z" finished-at="2019-06-04T13:29:55Z">
+          <exception class="org.openqa.selenium.TimeoutException">
             <message>
-              <![CDATA[FAILED: Element btn_Test not found on the InboxPage !!!]]>
+              <![CDATA[Timed out after 30 seconds waiting for visibility of [[ChromeDriver: chrome on XP (f6a20c8ba80fe1eabfbfa301dee8a2e4)] -> css selector: #password > div.aCsJod.oJeWuf > div > div.Xb9hP > input]
+Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
+System info: host: 'DLLA014P3273', ip: '10.0.33.220', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:51400}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}), userDataDir=C:\Users\SRISHT~1\AppData\Local\Temp\scoped_dir17616_26069}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=74.0.3729.169, browserConnectionEnabled=false, proxy={}, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: f6a20c8ba80fe1eabfbfa301dee8a2e4]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: FAILED: Element btn_Test not found on the InboxPage !!!
-	at org.testng.Assert.fail(Assert.java:94)
-	at com.qait.automation.getpageobjects.GetPage.element(GetPage.java:84)
+              <![CDATA[org.openqa.selenium.TimeoutException: Timed out after 30 seconds waiting for visibility of [[ChromeDriver: chrome on XP (f6a20c8ba80fe1eabfbfa301dee8a2e4)] -> css selector: #password > div.aCsJod.oJeWuf > div > div.Xb9hP > input]
+Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
+System info: host: 'DLLA014P3273', ip: '10.0.33.220', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:51400}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}), userDataDir=C:\Users\SRISHT~1\AppData\Local\Temp\scoped_dir17616_26069}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=74.0.3729.169, browserConnectionEnabled=false, proxy={}, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: f6a20c8ba80fe1eabfbfa301dee8a2e4
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:80)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:261)
+	at com.qait.automation.utils.SeleniumWait.waitForElementToBeVisible(SeleniumWait.java:53)
+	at com.qait.automation.getpageobjects.GetPage.element(GetPage.java:81)
 	at com.qait.automation.getpageobjects.GetPage.element(GetPage.java:62)
-	at com.qait.demo.keywords.HomePageAction.move(HomePageAction.java:41)
-	at com.qait.demo.tests.LoginTest.test02_verifycopymail(LoginTest.java:33)
+	at com.qait.automation.getpageobjects.GetPage.isElementDisplayed(GetPage.java:160)
+	at com.qait.demo.keywords.LoginPageAction.submitLoginDetails(LoginPageAction.java:38)
+	at com.qait.demo.tests.LoginTest.test01_verifyUseLoginOn(LoginTest.java:22)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -103,22 +71,70 @@ The application url is :- http://www.gmail.com]]>
 	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
 	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
 	at org.testng.TestNG.run(TestNG.java:1057)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+            <line>
+              <![CDATA[
+The application url is :- http://www.gmail.com]]>
+            </line>
+            <line>
+              <![CDATA[The test browser is :- chrome
+]]>
+            </line>
+            <line>
+              <![CDATA[TEST PASSED: element txt_id is displayed.]]>
+            </line>
+            <line>
+              <![CDATA[TEST PASSED: element btn_id is displayed.]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- test01_verifyUseLoginOn -->
+        <test-method status="FAIL" signature="test02_verifycopymail()[pri:0, instance:com.qait.demo.tests.LoginTest@3abbfa04]" name="test02_verifycopymail" duration-ms="30088" started-at="2019-06-04T13:29:55Z" finished-at="2019-06-04T13:30:25Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[FAILED: Element txt_searchbox not found on the InboxPage !!!]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: FAILED: Element txt_searchbox not found on the InboxPage !!!
+	at org.testng.Assert.fail(Assert.java:94)
+	at com.qait.automation.getpageobjects.GetPage.element(GetPage.java:84)
+	at com.qait.automation.getpageobjects.GetPage.element(GetPage.java:62)
+	at com.qait.automation.getpageobjects.GetPage.isElementDisplayed(GetPage.java:160)
+	at com.qait.demo.keywords.HomePageAction.searchDetails(HomePageAction.java:18)
+	at com.qait.demo.tests.LoginTest.test02_verifycopymail(LoginTest.java:29)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
-            <line>
-              <![CDATA[TEST PASSED: element txt_searchbox is displayed.]]>
-            </line>
-            <line>
-              <![CDATA[TEST PASSED: element btn_searchbox is displayed.]]>
-            </line>
-            <line>
-              <![CDATA[TEST PASSED: element no_of_msg  is displayed.]]>
-            </line>
           </reporter-output>
         </test-method> <!-- test02_verifycopymail -->
       </class> <!-- com.qait.demo.tests.LoginTest -->

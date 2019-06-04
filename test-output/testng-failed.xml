@@ -5,6 +5,7 @@
     <classes>
       <class name="com.qait.demo.tests.LoginTest">
         <methods>
+          <include name="test01_verifyUseLoginOn"/>
           <include name="test02_verifycopymail"/>
           <include name="initializeVariable"/>
         </methods>

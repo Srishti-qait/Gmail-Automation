@@ -6,9 +6,6 @@ import org.testng.annotations.Test;
 
 import com.qait.automation.TestSessionInitiator;
 
-/**
- * Created by anilsingh on 07-07-2017.
- */
 public class LoginTest {
 
     private TestSessionInitiator testSessionInitiator;
